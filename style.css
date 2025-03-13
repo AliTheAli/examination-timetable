@@ -1,0 +1,137 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#toggle-mode {
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+progress {
+  width: 80%;
+  height: 20px;
+}
+
+#progress-text {
+  display: block;
+  margin-top: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background-color: #0077b6;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.module-hos {
+  background-color: #d0f4de;
+}
+
+.module-psy {
+  background-color: #dee2ff;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.countdown {
+  font-weight: bold;
+  color: #d00000;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { color: #d00000; }
+  50% { color: #ff595e; }
+  100% { color: #d00000; }
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+.dark-mode table {
+  color: #eee;
+}
+
+.dark-mode thead {
+  background-color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #023e8a;
+}

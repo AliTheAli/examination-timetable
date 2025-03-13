@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Final Examination Timetable</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="taylors-logo.png" alt="Taylor's University Logo" class="logo">
+      <h1>Exam Timetable 📚⌛</h1>
+      <button id="toggle-mode">Toggle Light/Dark Mode</button>
+    </header>
+
+    <div class="quote">
+      "Stay focused and never give up!"
+    </div>
+
+    <div class="progress-container">
+      <label for="examProgress">Exam Progress</label>
+      <progress id="examProgress" value="0" max="2"></progress>
+      <span id="progress-text">0/2 Exams Completed</span>
+    </div>
+
+    <table id="examTable">
+      <thead>
+        <tr>
+          <th>Module Name</th>
+          <th>Module Code</th>
+          <th>Exam Type</th>
+          <th>Venue</th>
+          <th>Date</th>
+          <th>Duration</th>
+          <th>Starts At</th>
+          <th>Ends At</th>
+          <th>Countdown</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="module-hos">
+          <td>Service Quality Management in Hospitality</td>
+          <td>HOS62204</td>
+          <td>Final Exam 🎓</td>
+          <td>C-LEVEL 9-C9.04-C9.07 📍</td>
+          <td>Monday, 24 March 2025</td>
+          <td>1.5 hours</td>
+          <td>8:00 AM</td>
+          <td>9:30 AM</td>
+          <td><span class="countdown" data-date="2025-03-24T08:00:00">Loading...</span></td>
+        </tr>
+        <tr class="module-psy">
+          <td>Introduction to Psychology</td>
+          <td>PSY60204</td>
+          <td>Final Exam 🎓</td>
+          <td>B-2-THE GRAND HALL 📍</td>
+          <td>Wednesday, 26 March 2025</td>
+          <td>2 hours</td>
+          <td>8:00 AM</td>
+          <td>10:00 AM</td>
+          <td><span class="countdown" data-date="2025-03-26T08:00:00">Loading...</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button onclick="window.print()">Print / Export PDF</button>
+
+    <footer>
+      <p>&copy;Taylor's University</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
