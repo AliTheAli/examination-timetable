@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Update Progress Bar
     progress.value = completedExams;
-    progressText.textContent = `${completedExams}/2 Exams Completed`;
+    progressText.textContent = `${completedExams}/${countdowns.length} Exams Completed`;
   }
 
   // Call countdown updater every second
@@ -37,4 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleModeButton.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
   });
+
+  // Initial run
+  updateCountdown();
 });

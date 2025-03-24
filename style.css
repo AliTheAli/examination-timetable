@@ -135,3 +135,12 @@ button {
 button:hover {
   background-color: #023e8a;
 }
+
+/* Dark mode extras */
+.dark-mode button {
+  background-color: #1e90ff;
+}
+
+.dark-mode button:hover {
+  background-color: #4682b4;
+}
